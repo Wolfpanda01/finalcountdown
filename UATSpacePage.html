@@ -25,28 +25,29 @@
             if (timeRead >= 10) {       //moved bracket from here
 
                 document.getElementById("data").rows["seconds"].innerHTML = dataRow("Time Elapsed", data[index].time_seconds, "seconds");               
-                 document.getElementById("data").row["Latitude"].innerHTML = dataRow("Latitude", data[index].Latitude, "Latitude");
-                document.getElementById("data").row["Longitude"].innerHTML = dataRow("Longitude", data[index].Longitude, "Longitude");
-                document.getElementById("data").row["GPS Altitude"].innerHTML = dataRow("GPS Altitude", data[index].GPS_Altitude, " ");
-                document.getElementById("data").row["BMP Sensor Altitude"].innerHTML = dataRow("BMP Sensor Altitude", data[index].BMP_Sensor_Altitude, " ");
-                document.getElementById("data").row["BMP_Sensor_Pressure"].innerHTML = dataRow("BMP Sensor Pressure", data[index].BMP_Sensor_Pressure, " ");
-                document.getElementById("data").row["BMP Sensor Temperature"].innerHTML = dataRow("BMP Sensor Temperature", data[index].BMP_Sensor_Temperature, " ");
-                document.getElementById("data").row["Digital Sensor Temperature"].innerHTML = dataRow("Digital Sensor Temperature", data[index].Digital_Sensor_Temperature, " ");
-                document.getElementById("data").row["CSS Sensor Temperature"].innerHTML = dataRow("CSS Sensor Temperature", data[index].CSS_Sensor_Temperature, " ");
-                document.getElementById("data").row["CSS Sensor eCO2"].innerHTML = dataRow("CSS Sensor eCO2", data[index].CSS_Sensor_eCO2, " ");
-                document.getElementById("data").row["CSS Sensor TVOC"].innerHTML = dataRow("CSS Sensor TVOC", data[index].CSS_Sensor_TVOC, " ");
-                document.getElementById("data").row["UV"].innerHTML = dataRow("UV", data[index].UV, " ");
-                document.getElementById("data").row["Accel X"].innerHTML = dataRow("Accel X", data[index].Accel_X, "");
-                document.getElementById("data").row["Accel Y"].innerHTML = dataRow("Accel Y", data[index].Accel_Y, "");
-                document.getElementById("data").row["Accel Z"].innerHTML = dataRow("Accel Z", data[index].Accel_Z, "");
-                document.getElementById("data").row["Magnetic X"].innerHTML = dataRow("Magnetic X", data[index].Magnetic_X, "");
-                document.getElementById("data").row["Magnetic Y"].innerHTML = dataRow("Magnetic Y", data[index].Magnetic_Y, "");
-                document.getElementById("data").row["Magnetic Z"].innerHTML = dataRow("Magnetic Z", data[index].Magnetic_Z, "");
-                document.getElementById("data").row["Gyro X"].innerHTML = dataRow("Gyro X", data[index].Gyro_X, "");
-                document.getElementById("data").row["Gyro Y"].innerHTML = dataRow("Gyro Y", data[index].Gyro_Y, "");
-                document.getElementById("data").row["Gyro Z"].innerHTML = dataRow("Gyro Z", data[index].Gyro_Z, "");
+                document.getElementById("data").rows["Latitude"].innerHTML = dataRow("Latitude", data[index].Latitude, "Latitude");
+                document.getElementById("data").rows["Longitude"].innerHTML = dataRow("Longitude", data[index].Longitude, "Longitude");
+                document.getElementById("data").rows["GPS_Altitude"].innerHTML = dataRow("GPS_Altitude", data[index].GPS_Altitude, " ");
+                document.getElementById("data").rows["BMP_Sensor_Altitude"].innerHTML = dataRow("BMP_Sensor_Altitude", data[index].BMP_Sensor_Altitude, " ");
+                document.getElementById("data").rows["BMP_Sensor_Pressure"].innerHTML = dataRow("BMP_Sensor_Pressur", data[index].BMP_Sensor_Pressure, " ");
+                document.getElementById("data").rows["BMP_Sensor_Temperature"].innerHTML = dataRow("BMP_Sensor_Temperature", data[index].BMP_Sensor_Temperature, " ");
+                document.getElementById("data").rows["Digital_Sensor_Temperature"].innerHTML = dataRow("Digital_Sensor_Temperature", data[index].Digital_Sensor_Temperature, " ");
+                document.getElementById("data").rows["CSS_Sensor_Temperature"].innerHTML = dataRow("CSS_Sensor_Temperature", data[index].CSS_Sensor_Temperature, " ");
+                document.getElementById("data").rows["CSS_Sensor_eCO2"].innerHTML = dataRow("CSS_Sensor_eCO2", data[index].CSS_Sensor_eCO2, " ");
+                document.getElementById("data").rows["CSS_Sensor_TVOC"].innerHTML = dataRow("CSS_Sensor_TVOC", data[index].CSS_Sensor_TVOC, " ");
+                document.getElementById("data").rows["UV"].innerHTML = dataRow("UV", data[index].UV, " ");
+                document.getElementById("data").rows["Accel_X"].innerHTML = dataRow("Accel_X", data[index].Accel_X, "");
+                document.getElementById("data").rows["Accel_Y"].innerHTML = dataRow("Accel_Y", data[index].Accel_Y, "");
+                document.getElementById("data").rows["Accel_Z"].innerHTML = dataRow("Accel Z", data[index].Accel_Z, "");
+                document.getElementById("data").rows["Magnetic_X"].innerHTML = dataRow("Magnetic_X", data[index].Magnetic_X, "");
+                document.getElementById("data").rows["Magnetic_Y"].innerHTML = dataRow("Magnetic_Y", data[index].Magnetic_Y, "");
+                document.getElementById("data").rows["Magnetic_Z"].innerHTML = dataRow("Magnetic_Z", data[index].Magnetic_Z, "");
+                document.getElementById("data").rows["Gyro_X"].innerHTML = dataRow("Gyro_X", data[index].Gyro_X, "");
+                document.getElementById("data").rows["Gyro_Y"].innerHTML = dataRow("Gyro_Y", data[index].Gyro_Y, "");
+                document.getElementById("data").rows["Gyro_Z"].innerHTML = dataRow("Gyro_Z", data[index].Gyro_Z, "");
+
                 document.getElementById("timeClock").innerHTML = "the time is" + theTime.getHours() + ":"
-                    + (TheTime.getMinutesID() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes());
+                    + (TheTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes());
                 +(theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds());
             }
             if (index < 500) {
@@ -80,29 +81,29 @@
             <tr id="seconds"> </tr>
             <tr id="Latitude"></tr>
             <tr id="Longitude"></tr>
-            <tr id="GPS Altitude"></tr>
-            <tr id="BMP Sensor Altitude"></tr>
-            <tr id="BMP Sensor Pressure"></tr>
-            <tr id="BMP Sensor Temperature"></tr>
-            <tr id="Digital Sensor Temperature"></tr>
-            <tr id="CSS Sensor Temperature"></tr>
-            <tr id="CSS Sensor eCO2"></tr>
-            <tr id="CSS Sensor TVOC"></tr>
+            <tr id="GPS_Altitude"></tr>
+            <tr id="BMP_Sensor_Altitude"></tr>
+            <tr id="BMP_Sensor_Pressure"></tr>
+            <tr id="BMP_Sensor_Temperature"></tr>
+            <tr id="Digital_Sensor_Temperature"></tr>
+            <tr id="CSS_Sensor_Temperature"></tr>
+            <tr id="CSS_Sensor_eCO2"></tr>
+            <tr id="CSS_Sensor_TVOC"></tr>
             <tr id="UV"></tr>
-            <tr id="Accel X"></tr>
-            <tr id="Accel Y"></tr>
-            <tr id="Accel Z"></tr>
-            <tr id="Magnetic X"></tr>
-            <tr id="Magnetic Y"></tr>
-            <tr id="Magnetic Z"></tr>
-            <tr id="Gyro X"></tr>
-            <tr id="Gyro Y"></tr>
-            <tr id="Gyro Z"></tr>
+            <tr id="Accel_X"></tr>
+            <tr id="Accel_Y"></tr>
+            <tr id="Accel_Z"></tr>
+            <tr id="Magnetic_X"></tr>
+            <tr id="Magnetic_Y"></tr>
+            <tr id="Magnetic_Z"></tr>
+            <tr id="Gyro_X"></tr>
+            <tr id="Gyro_Y"></tr>
+            <tr id="Gyro_Z"></tr>
         </tbody>
     </table>
     <p id="timeClock">Time is displayed here when running</p>
-    <button id="startButton" class="button" onclick="start();">Start</button>>
-    <button id="stopButton" class="button" onclick="stop();">Stop</button>>
+    <button id="startButton" class="button" onclick="start();">Start</button>
+    <button id="stopButton" class="button" onclick="stop();">Stop</button>
     <br>
     <br>
     <p id="countdownTimer">Starting countdown... </p>
