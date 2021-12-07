@@ -47,7 +47,7 @@
                 document.getElementById("data").rows["Gyro_Z"].innerHTML = dataRow("Gyro_Z", data[index].Gyro_Z, "");
 
                 document.getElementById("timeClock").innerHTML = "the time is" + theTime.getHours() + ":"
-                    + (TheTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes());
+                    + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes());
                 +(theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds());
             }
             if (index < 500) {
